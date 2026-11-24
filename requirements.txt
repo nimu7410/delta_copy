@@ -1,0 +1,5 @@
+requests>=2.31
+websocket-client>=1.7
+flask>=3.0
+psycopg2-binary>=2.9
+boto3>=1.34

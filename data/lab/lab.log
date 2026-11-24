@@ -1,0 +1,25 @@
+2026-11-08 13:19:09,309 INFO lab lab running: maker 2.36 bps, taker 5.90 bps, limits {'stop_bps': 25.0, 'loss_streak': 2.0, 'streak_pause_s': 3600.0, 'max_drawdown_usd': 50.0}
+2026-11-08 13:23:18,312 INFO lab lab running: maker 2.36 bps, taker 5.90 bps, limits {'stop_bps': 25.0, 'loss_streak': 2.0, 'streak_pause_s': 3600.0, 'max_drawdown_usd': 50.0}
+2026-11-08 18:02:09,826 INFO lab lab running: maker 2.36 bps, taker 5.90 bps, limits {'stop_bps': 25.0, 'loss_streak': 2.0, 'streak_pause_s': 3600.0, 'max_drawdown_usd': 50.0}
+2026-11-08 18:05:32,816 INFO lab lab running: maker 2.36 bps, taker 5.90 bps, limits {'stop_bps': 25.0, 'loss_streak': 2.0, 'streak_pause_s': 3600.0, 'max_drawdown_usd': 50.0}
+2026-11-08 18:09:25,153 INFO lab lab running: maker 2.36 bps, taker 5.90 bps, limits {'stop_bps': 25.0, 'loss_streak': 2.0, 'streak_pause_s': 3600.0, 'max_drawdown_usd': 50.0}
+2026-11-08 18:46:38,605 INFO lab lab running: maker 2.36 bps, taker 5.90 bps, limits {'stop_bps': 25.0, 'loss_streak': 2.0, 'streak_pause_s': 3600.0, 'max_drawdown_usd': 50.0}
+2026-11-08 18:47:23,375 INFO lab hand.jsonl arm claude-1 -2.41 bps $-2.34 equity $997.66 (1 trades)
+2026-11-08 18:47:57,229 INFO lab lab running: maker 2.36 bps, taker 5.90 bps, limits {'stop_bps': 25.0, 'loss_streak': 2.0, 'streak_pause_s': 3600.0, 'max_drawdown_usd': 50.0}
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/delta/live_lab.py", line 585, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/ubuntu/Documents/delta/live_lab.py", line 580, in main
+    Lab(maker, taker).run(market)
+  File "/home/ubuntu/Documents/delta/live_lab.py", line 531, in run
+    if now - lost_since >= FEED_GRACE_S:
+       ~~~~^~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+2026-11-08 18:49:46,529 INFO lab lab running: maker 2.36 bps, taker 5.90 bps, limits {'stop_bps': 25.0, 'loss_streak': 2.0, 'streak_pause_s': 3600.0, 'max_drawdown_usd': 50.0}
+2026-11-08 18:53:19,164 INFO lab hand.jsonl arm fable-1 -12.50 bps $-12.13 equity $987.87 (1 trades)
+2026-11-08 18:59:28,096 INFO lab hand.jsonl arm claude-1 -7.44 bps $-7.21 equity $992.79 (1 trades)
+2026-11-08 19:21:19,792 INFO lab lab running: maker 2.36 bps, taker 5.90 bps, limits {'stop_bps': 25.0, 'loss_streak': 2.0, 'streak_pause_s': 3600.0, 'max_drawdown_usd': 50.0}
+2026-11-08 19:21:21,077 INFO lab hand.jsonl arm fable-2 +11.30 bps $+10.82 equity $998.70 (2 trades)
+2026-11-08 19:22:14,186 INFO lab lab running: maker 2.36 bps, taker 5.90 bps, limits {'stop_bps': 25.0, 'loss_streak': 0.0, 'streak_pause_s': 3600.0, 'max_drawdown_usd': 0.0}
+2026-11-08 19:59:38,286 INFO lab lab running SOLUSD: maker 2.36 bps, taker 5.90 bps, half tick 5e-05, free close 900s, limits {'stop_bps': 25.0, 'loss_streak': 0.0, 'streak_pause_s': 3600.0, 'max_drawdown_usd': 0.0}
